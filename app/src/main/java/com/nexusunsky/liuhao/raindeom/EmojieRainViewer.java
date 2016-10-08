@@ -112,8 +112,7 @@ public class EmojieRainViewer {
                 ObjectAnimator xanimator = mAnimators.get(yanimator);
                 if (!yanimator.isRunning() && !xanimator.isRunning()) {
                     AnimatorSet set = new AnimatorSet();
-                    set.play(xanimator).with(yanimator);
-                    set.setInterpolator(new AccelerateInterpolator(1.2f));
+                    set.play(yanimator).with(xanimator);
                     set.start();
                 }
             }
@@ -139,23 +138,23 @@ public class EmojieRainViewer {
     private void createAnimator(int fallenTiem, int emojicount) {
         for (int i = 0; i < emojicount; i++) {
             ImageView view = views.get(i);
-            view.setY(-new Random().nextInt(dip2px(context, 227) * 7) - dip2px(context, 10));
-            view.setX(new Random().nextInt(screenWidth) + dip2px(context, 27));
-            if (0 == i % 2) {
-                ObjectAnimator yAnimator = ObjectAnimator.ofFloat(view, "translationY",
-                        view.getY(), (float) (screenHeight))
-                        .setDuration(new Random().nextInt(fallenTiem) + 5000);
+            view.setY(-new Random().nextInt(dip2px(context, 1717)) - dip2px(context, 17));
+            ObjectAnimator yAnimator = ObjectAnimator.ofFloat(view, "translationY",
+                    view.getY(), (float) (screenHeight)).setDuration(new Random().nextInt(fallenTiem) + 5000);
+            yAnimator.setInterpolator(new AccelerateInterpolator(1.2f));
+            if (0 == (i & 1)) {//奇,偶分离
                 ObjectAnimator xAnimator = ObjectAnimator.ofFloat(view, "translationX",
-                        view.getX(), screenWidth / 2 + new Random().nextInt(Math.abs(screenWidth / 3)))
-                        .setDuration(new Random().nextInt(fallenTiem) + 5000);
+                        screenWidth / 2 + new Random().nextInt(dip2px(context, screenWidth / 4)),
+                        screenWidth / 2 - new Random().nextInt(dip2px(context, screenWidth / 4)))
+                        .setDuration(new Random().nextInt(fallenTiem) + 6000);
+                xAnimator.setInterpolator(new AccelerateInterpolator(0.7f));
                 mAnimators.put(yAnimator, xAnimator);
             } else {
-                ObjectAnimator yAnimator = ObjectAnimator.ofFloat(view, "translationY",
-                        view.getY(), (float) (screenHeight))
-                        .setDuration(new Random().nextInt(fallenTiem) + 5000);
                 ObjectAnimator xAnimator = ObjectAnimator.ofFloat(view, "translationX",
-                        view.getX(), screenWidth / 2 - new Random().nextInt(Math.abs(screenWidth / 3)))
-                        .setDuration(new Random().nextInt(fallenTiem) + 5000);
+                        screenWidth / 2 - new Random().nextInt(dip2px(context, screenWidth / 4)),
+                        screenWidth / 2 + new Random().nextInt(dip2px(context, screenWidth / 4)))
+                        .setDuration(new Random().nextInt(fallenTiem) + 6000);
+                xAnimator.setInterpolator(new AccelerateInterpolator(0.7f));
                 mAnimators.put(yAnimator, xAnimator);
             }
         }
@@ -223,10 +222,6 @@ public class EmojieRainViewer {
          *
          * @param factor 动画的快慢度。将factor设置为1.0f会产生一条y=x^2的抛物线。
          *               增加factor到1.0f之后为加大这种渐入效果（也就是说它开头更加慢，结尾更加快）
-         *               <br/>Degree to which the animation should be eased. Seting
-         *               factor to 1.0f produces a y=x^2 parabola（抛物线）. Increasing factor above
-         *               1.0f  exaggerates the ease-in effect (i.e., it starts even
-         *               slower and ends evens faster)
          */
         public AccelerateInterpolator(float factor) {
             mFactor = factor;

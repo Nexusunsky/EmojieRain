@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mRainViewer.preparEmojiRain(40, R.drawable.yuanbao, 5000, new EmojieRainViewer.ITriggerCondition() {
+                mRainViewer.preparEmojiRain(40, R.drawable.yuanbao, 2000, new EmojieRainViewer.ITriggerCondition() {
                     @Override
                     public boolean triggerCondition(Map<ObjectAnimator, ObjectAnimator> objectAnimator) {
                         return true;
