@@ -8,10 +8,10 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
-import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-    EmojiRainViewer mRainViewer;
+    EmojieRainViewer mRainViewer;
     Button button;
 
     @Override
@@ -20,15 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RelativeLayout rootLayout = (RelativeLayout) findViewById(R.id.baselayout);
-        mRainViewer = new EmojiRainViewer(MainActivity.this, rootLayout);
+        mRainViewer = new EmojieRainViewer(MainActivity.this, rootLayout);
 
         button = (Button) findViewById(R.id.rain_trigger);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mRainViewer.preparEmojiRain(30, R.drawable.yuanbao, 3000, new EmojiRainViewer.ITriggerCondition() {
+                mRainViewer.preparEmojiRain(30, R.drawable.yuanbao, 3000, new EmojieRainViewer.ITriggerCondition() {
                     @Override
-                    public boolean triggerCondition(List<ObjectAnimator> objectAnimators) {
+                    public boolean triggerCondition(Map<ObjectAnimator, ObjectAnimator> objectAnimator) {
                         return true;
                     }
                 });

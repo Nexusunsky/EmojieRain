@@ -1,3 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RainDeom</string>
+
+    <string name="app_name">平安金管家</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+    <string name="submit">提交</string>
+    <string name="wait_loading">加载中...</string>
+    <string name="connec_ungeilivable">网络不给力，请点击屏幕重试！</string>
+    <string name="connec_failed">网络不给力，请稍后再试！</string>
+    <string name="connec_noused_tips">网络不可用，请检查网络设置！</string>
+    <string name="custom_loading_dialog_txt">正在加载,请稍候</string>
+    <string name="interactive_empty_tip">暂时还没人发言，来说说你的想法吧</string>
+    <string name="bottom_bar_index">首页</string>
+    <string name="bottom_bar_pilicy">保单</string>
+    <string name="bottom_bar_activity">活动</string>
+    <string name="bottom_bar_discover">发现</string>
+    <string name="sign_sure_btn">确认</string>
+
+    <!-- 通用模块 -->
+    <string name="pa_no_data">暂无数据!</string>
+    <string name="pa_load_exception">加载失败，再刷新一下试试吧！</string>
+    <string name="pa_refresh">刷新</string>
+
+    <!-- 首页 -->
+    <string name="recommand_product_title">推荐产品</string>
+
+    <!-- 财首页 -->
+    <string name="bottom_bar_wealth">财富</string>
+    <string name="bottom_bar_wealth_load">财富加载</string>
+    <string name="yesterday_wangcai">旺财</string>
+    <string name="yesterday_income">7日年化利率</string>
+    <string name="liji_kaihu_text">立即开户</string>
+    <string name="weath_baifenbi_text2">7日年化收益率</string>
+    <string name="product_classification">产品分类</string>
+    <string name="Life_baoxian">人身保险</string>
+    <string name="healthy_baoxian">健康保险</string>
+    <string name="unexpected_baoxian">意外保险</string>
+    <string name="property_baoxian">财产保险</string>
+    <string name="health_manage">健康管理</string>
+    <string name="life_navigation">生活导航</string>
+    <string name="chuxin_anxin">出行安心</string>
+    <string name="jiaren_guanai">家人关爱</string>
+    <string name="jiacai_wuyou">家财无忧</string>
+    <string name="jiankang_shouhu">医疗保障</string>
+    <string name="zhinen_tuijian">智能推荐</string>
+    <string name="siren_dingzhi">私人定制</string>
+    <string name="caini_xihuan">猜你喜欢</string>
+    <string name="monney_manager">零钱管理</string>
+    <string name="policy_wealth">保单理财</string>
+    <string name="switch_product_navigation">切至产品导航</string>
+    <string name="bottom_bar_health">健康</string>
+    <string name="bottom_bar_mine">我</string>
+    <string name="confirm_txt">确定</string>
+    <string name="cancle_txt">取消</string>
+    <string name="back_txt">您确定退出当前页面吗？</string>
+    <string name="connect_timeout">网络不给力，请稍后再试！</string>
+    <string name="title_back">返回</string>
+    <string name="check_phone">您目前未在公司登记手机，为了维护您资料的完整性，更好的为您提供服务 ，请联系您的服务人员补充手机号码</string>
+    <string name="mine_notifications">消息提醒</string>
+    <string name="mine_setting">个人设置</string>
+    <string name="deal_content_one">\n\t\t平安金管家APP平台（以下简称“本平台”）是中国平安金管家保险股份有限公司（以下简称“平安金管家”）面向客户的新一代智能移动终端应用服务工具，提供包括但不限于在线购买保险、预约购买、办理保单服务、保单查询、保险资讯等多样化的服务功能，平安金管家客户在安装本平台后，其终端设备号将与本人保单进行关联验证，验证通过后可便捷获取更多个人保单服务。</string>
+    <string name="deal_content_two">\n\t\t（一）	您确认，您已充分阅读、理解并接受本协议的全部内容，一旦您接受本协议，即表示您与平安金管家已达成协议并同意接受本协议的全部约定。在接受本协议之前，请您仔细阅读本协议的全部内容。如果您不同意协议的任何内容，请不要进行后续操作。\n\t\t（二）	您确认，在您同意接受本协议并申请开通相关业务功能时，平安金管家有理由相信您是具有完全民事权利能力和完全民事行为能力、能够独立承担民事责任的自然人。如不具备前述条件，您应该立即停止申请使用本服务。\n\t\t（三）	您授权平安集团，除法律另有规定之外，将您提供给平安集团的信息、享受平安集团服务产生的信息（包括本协议签署之前提供和产生的信息）以及平安集团根据本条约定查询、收集的信息，用于平安集团及其因服务必要委托的合作伙伴为您提供服务、推荐产品、开展市场调查与信息数据分析。\n\t\t您授权平安集团，除法律另有规定之外，基于为您提供更优质服务和产品的目的，向平安集团因服务必要开展合作的伙伴提供、查询、收集您的信息。
+为确保您信息的安全，平安集团及其合作伙伴对上述信息负有保密义务，并采取各种措施保证信息安全。\n\t\t本条款自本协议签署时生效，具有独立法律效力，不受合同成立与否及效力状态变化的影响。\n\t\t本条所称“平安集团”是指中国平安保险（集团）股份有限公司及其直接或间接控股的公司，以及中国平安保险（集团）股份有限公司直接或间接作为其单一最大股东的公司。\n\t\t如您不同意上述授权条款的部分或全部，可致电客服热线（95511）取消或变更授权。</string>
+    <string name="deal_content_three">\n\t\t（一）	账户相关\n\t\t1、	本平台可使用APP账号、平安“一账通”账号（以下统称“平台账号”）登录APP，并使用相应服务，在您接受本协议并首次使用本平台时，本平台将根据您注册使用的APP账号或平安“一账通”账号，且在确认您的账号信息和绑定意愿后，将您的APP账号与平安“一账通”账号绑定。\n\t\t2、	自您同意注册平台账号，并登录本平台后，本协议正式生效。\n\t\t（二）	账户安全\n\t\t您将对使用平台账户及密码进行的一切操作及言论负完全的责任，您同意：\n\t\t1、	除相关产品另有规则外,本公司可以通过您的平台账号、密码（包括手势密码）和手机校验等安全产品生产出的校验码（下文简称“校验码”）来识别您的身份，如在手机端通过手势密码登录账户等，在手势密码登录时，本公司将不进行其他密码等的验证。您应当妥善保管您的平台账号、密码和校验码，对于因密码或校验码泄露所致的损失，由您自行承担。您保证不向其他任何人泄露该账户登录名、密码、校验码以及身份信息等，亦不使用其他任何人的平台账号、密码及校验码。本公司亦可能通过应用您使用的其他产品或设备识别您的指示，您应当妥善保管处于您或应当处于您掌控下的这些产品或设备，对于这些产品或设备遗失所致的任何损失，由您自行承担。
+        \n\t\t2、	基于计算机端、手机端以及使用其他电子设备的用户使用习惯，我们可能在您使用具体产品时设置不同的账户登录模式及采取不同的措施识别您的身份。\n\t\t3、	您同意，（a）如您发现有他人冒用或盗用您的账户及密码或任何其他未经合法授权之情形，或发生与APP账户关联的手机或其他设备遗失或其他可能危及到账户资金安全情形时，应立即以有效方式通知本公司，向本公司申请暂停相关服务。您不可撤销地授权本公司将前述情况同步给平安网站，以保障您的合法权益；及（b）确保您在持续登录任一平安网站时段结束时，以正确步骤离开网站。本公司不能也不会对因您未能遵守本款约定而发生的任何损失、损毁及其他不利后果负责。您理解本公司对您的请求采取行动需要合理期限，在此之前，本公司对已执行的指令及(或)所导致的您的损失不承担任何责任。
+        \n\t\t4、	除非另有法律规定或经司法裁判，且征得本公司同意，否则您的平台账户名及密码、平台账户不得以任何方式转让、赠与或继承（相关的财产权益除外）。\n\t\t5、	您同意，基于运行和交易安全的需要，本公司可以暂时停止提供或者限制本服务部分功能，或提供新的功能，在任何功能减少、增加或者变化时，只要您仍然使用本服务，表示您仍然同意本协议或者变更后的协议。\n\t\t6、	本公司有权了解您使用本公司产品或服务的真实交易背景及目的，您应如实提供本公司所需的真实、全面、准确的信息；如果本公司有合理理由怀疑您提供虚假交易信息的，本公司有权暂时或永久限制您所使用的产品或服务的部分或全部功能，并通过邮件或者站内信或客户端通知等方式通知您，您应及时予以关注。</string>
+    <string name="deal_content_four">\n\t\t（一）	您有义务妥善保管您的平台账号及账号相关的密码。为保障您个人的保单信息安全，请妥善保管您的手机等智能终端。如因客户个人原因导致本平台被他人使用，而造成保单服务信息泄漏或其他损失的，平安金管家不承担责任。如您对本平台显示的信息有任何疑问，请致电客服热线95511进行咨询。\n\t\t（二）	为保障您的个人信息安全，请妥善保管您的手机等智能终端并定期清理相关消息记录。\n\t\t（三）	注意事项：\n\t\t1、	资费说明，会产生数据流量，用户需自行向运营商了解相关资费；\n\t\t2、	特定服务或产品，有单独协议、业务规则，需使用前阅读并同意；\n\t\t3、	平安金管家会尽力保障用户的数据储存安全，但不能保障所有用户数据完整，一旦出现储存失败等情况，平安金管家没有义务向用户提供或返还任何数据。</string>
+    <string name="deal_content_five">\n\t\t本公司系统因下列状况无法正常运作，使您无法使用各项服务时，本公司不承担损害赔偿责任，该状况包括但不限于：\n\t\t1、	本公司在本APP公告之系统停机维护期间； \n\t\t2、	电信设备出现故障不能进行数据传输的；\n\t\t3、	因台风、地震、海啸、洪水、停电、战争、恐怖袭击等不可抗力之因素，造成本公司系统障碍不能执行业务的；\n\t\t4、	由于黑客攻击、电信部门技术调整或故障、网站升级等原因而造成的服务中断或者延迟。</string>
+    <string name="deal_content_six">\n\t\t1、	财富模块中提供的产品、服务均由特定提供方提供，并由用户自行判断，选择是否使用并承担相应风险，与本公司无关。本公司不对任何用户的任何交易提供任何担保，用户应依赖于自身的判断进行交易并承担全部风险与责任。\n\t\t2、	本公司仅为寿险产品的提供方，并有解释权。\n\t\t3、	本平台上代销的非寿险产品均由对应的合作保险公司承担相应责任，本平台上代销的基金产品由大华基金提供，本平台的续期宝是由平安付提供，并承担责任。</string>
+    <string name="deal_content_seven">\n\t\t1、	本APP软件的一切著作权、专利权、商标权、商业秘密等知识产权，以及与本APP软件相关的所有信息内容，包括但不限于文字、图片、档案、音频、视频、图表、界面设计、版面框架、有关数据及电子文档等，均受中国法律法规和国际条约保护，除涉及第三方授权的软件或技术外，平安金管家享有上述知识产权。\n\t\t2、	非经平安金管家书面同意，任何人不得擅自使用、修改、复制、公开传播、改变、散布、发行或公开发表或者进行还原工程解编或反向组绎本软件程序或内容。 平安金管家保留追究上述未经许可行为的权利。 \n\t\t3、	尊重知识产权是您应尽的义务，如有违反，您应承担损害赔偿责任(包括但不限于诉讼费用及律师费用等)。</string>
+    <string name="deal_content_eight">\n\t\t平安金管家有权根据需要，定期或不定期的制定、 修改相关协议和各类规则，有权以网页界面、电子邮件、手机短信、APP消息推送的形式提前30天通知您后对本协议内容作出变更。如您在变更生效后继续使用本平台，则视为您同意平安金管家对本协议的变更。一切变更以最新公布为准。</string>
+    <string name="password_manager">修改登录密码</string>
+    <string name="am_index_forget_pwd">忘记密码</string>
+    <string name="am_login_tip1">登录即表示您同意《隐私条例和服务条款》</string>
+    <string name="am_login_tip1_param">隐私条例和服务条款</string>
+    <string name="am_invitation_code_tip">提交客户经理工号后可享受更多平安金管家提供的专属服务！</string>
+    <string name="am_set_invitation_code_hint">可选，请输入客户经理工号</string>
+    <string name="am_set_invitation_code_hint3">请输入您的昵称</string>
+    <string name="am_set_invitation_code_hint4">客户经理手机号，选填</string>
+    <string name="am_set_invitation_code_hint5">请输入您客户经理的手机号或工号</string>
+    <string name="am_set_invitation_code_hint6">请输入您产品服务经理的手机号或工号</string>
+    <string name="am_set_invitation_code_hint_tip1">请填写邀请您体验平安金管家手机app的客户经理工号，若没有可不填。</string>
+    <string name="am_set_invitation_code_hint_tip3">请填写邀请您体验平安金管家App的客户经理手机号或工号，享受更多专属服务。</string>
+    <string name="am_set_invitation_code_hint_tip4">请填写邀请您体验平安金管家App的产品服务员经理手机号或工号，享受更多专属服务。</string>
+    <string name="am_phone_tip">注：平安金管家客户请使用当前在平安系统登记的手机号进行登录</string>
+    <string name="bottom_hint">将条形码或二维码置于取景框内系统会自动扫描。
+        （建议与镜头保持10CM距离，尽量避免逆光和阴影）</string>
+    <string name="top_hint">将条形码或二维码置于取景框内系统会自动扫描</string>
+    <string name="qr_policy">请扫描保险合同背面的二维码。找不到？</string>
+    <string name="qr_activity">请扫描活动现场的二维码获取入场券</string>
+    <string name="cancel">取消</string>
+    <string name="msg_camera_framework_bug">抱歉，检测到拍照失败，请开启平安金管家拍照权限！</string>
+    <string name="msg_location_framework_bug">抱歉，检测到定位失败，请开启平安金管家定位权限！</string>
+    <!-- 服务追踪 -->
+    <string name="stp_proc_date">对不起，已超出一个月，不支持评价!</string>
+    <string name="stp_evaluat_success">评价成功!</string>
+    <string name="invitation_text_time">%1$ &#8212; %2$</string>
+    <!-- 欢迎页面 -->
+    <string name="guide_title1">专心，身边的生活助手</string>
+    <string name="guide_subtitle1">优选产品、精品服务、缤纷活动只为你</string>
+    <string name="guide_title2">专属，贴心的健康顾问</string>
+    <string name="guide_subtitle2">私人医生，随时可助</string>
+    <string name="guide_title3">专业，最懂你的保险专家</string>
+    <string name="guide_subtitle3">权益随时可查，更赞的保单管理体验</string>
+    <string name="guide_title4">平安金管家</string>
+    <string name="guide_subtitle4">值得信赖的移动金融生活管家</string>
+    <string name="policy_guide_title2">您可以：</string>
+    <string name="policy_guide_subtext1_2">查保单、查缴费、查理赔、</string>
+    <string name="policy_guide_subtext2_2">办保全、做预约</string>
+    <string name="policy_guide_title3">还可以：</string>
+    <string name="policy_guide_subtext1_3">办理贷款、挂失保单、</string>
+    <string name="policy_guide_subtext2_3">找客户经理、查领红利及生存金</string>
+    <string name="policy_guide_title4">更可以：</string>
+    <string name="policy_guide_subtext1_4">办理续期宝</string>
+    <string name="policy_guide_subtext2_4">保单自助回访、申请急难援助服务</string>
+    <string name="sign_btn_sign">签名确认</string>
+    <!-- 新契约 -->
+
+    <string name="input_info_dialog_title">温馨提示</string>
+    <string name="input_info_dialog_content">为维护您的权益，请您在签收了保单和回执之后再进行回访。</string>
+    <string name="title_activity_check_info">信息核对</string>
+    <string name="check_info_content">为维护客户权益，请由投保人本人完成回访，并确保提供的各项信息真实、准确。</string>
+    <string name="title_activity_dyn_vali_code">动态码验证</string>
+    <string name="dyn_vali_code_alert">请输入手机动态码</string>
+    <string name="dyn_vali_code_content">手机动态码已经发送到您的手机%1$s，请在%2$d秒内输入验证码。</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_call_back">选择回访保单</string>
+    <string name="call_back_list_name1">保单号</string>
+    <string name="call_back_list_name2">被保险人</string>
+    <string name="call_back_list_name3">主险名称</string>
+    <string name="title_activity_client_know">客户须知</string>
+    <string name="client_know_content">%1$s先生/女士\n您好！\n感谢您通过业务员%2$s购买我公司（平安金管家）的%3$s产品，根据保监会的要求，现与您就本次购买的保险进行问卷回访。为了维护您的权益，请您认真阅读以下内容：\n1.回访问卷必须由投保人本人亲自填写；\n2.本人同意并认可通过本软件进行回访；\n3.回访问卷的答案勾选符合投保人本人的实际情况，内容真实有效；\n4.若因投保人原因使回访情况与事实不符，产生的纠纷由本人负责。</string>
+    <string name="client_know_sure">接受</string>
+    <string name="client_know_cancel">不接受</string>
+    <string name="am_set_invitation_code_hint_tip">请填写邀请您体验平安金管家手机app的服务专员代码，享受更多专属服务。</string>
+
+    <string-array name="input_info_cred_type">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>军人证</item>
+        <item>少儿证</item>
+        <item>户口本</item>
+        <item>港澳台证件</item>
+        <item>出生证</item>
+    </string-array>
+    <string-array name="input_info_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string name="preference_key_tts_role">tts_role</string>
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="preference_key_iat_engine">iat_engine</string>
+    <string name="preference_default_iat_engine">iat</string>
+
+    <string-array name="preference_entries_iat_engine">
+        <item>短信听写</item>
+        <item>地图搜索</item>
+        <item>热词搜索</item>
+        <item>视频搜索</item>
+    </string-array>
+    <string-array name="preference_values_iat_engine">
+        <item>iat</item>
+        <item>poi</item>
+        <item>search</item>
+        <item>video</item>
+    </string-array>
+
+    <string name="error_remark_1">语音识别结果与点选不一致</string>
+    <string name="error_remark_2">语音无法识别</string>
+
+    <!-- 分享成功失败的 Toast -->
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+
+    <!-- 获取 Token -->
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+
+    <!-- 微信 -->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="setNickName">您还没有设置昵称，是否立即去设置？</string>
+    <!-- 服务专员列表-->
+    <string name="agent_list_statement">本活动由以下服务专员为你推荐</string>
+    <string name="entroll_agent_list_statement">本活动由以下服务专员为你推荐,请选择1位为您本次活动的服务专员。</string>
+    <string name="agent_list_name1">姓名</string>
+    <string name="agentn_list_activities_date">活动日期</string>
+    <string name="agent_list_name2">服务专员代码</string>
+    <string name="agent_list_name3">拨打电话</string>
+    <string name="agent_list_title">服务专员(23人)</string>
+    <string name="setGpsService">您还没有开启gps服务，是否立即去设置？</string>
+
+    <string name="csd_login_btn_login">登录</string>
+    <string name="all_activity_sliderView_description">%1$s人参加</string>
+    <string name="tips_for_history_invite">温馨提示：转介绍用户参与活动的“参与代码”若不是您推荐代码，则不计入您的转介绍成功抽奖机会。</string>
+
+    <!-- bbw -->
+    <string name="bbw">旺财送爱幸运抽奖——每天送出6个5088元旺财大红包，快来试试手气吧！</string>
+
+    <!-- 健康行start -->
+    <string name="hw_home_title_4">健康行走一起来</string>
+    <string name="hw_activity_rule">活动规则</string>
+    <string name="hw_home_tab_today">今日计步</string>
+    <string name="hw_home_tab_history">历史记录</string>
+    <string name="hw_home_tab_mine">我的记录</string>
+    <string name="hw_home_tip_nohistory">暂无历史记录，\r\n赶紧行动吧!</string>
+    <string name="hw_yes">是</string>
+    <string name="hw_no">否</string>
+    <string name="hw_runbackground_tip">正在努力计步中，是否保持后台运行？\r\n友情提示:持续使用GPS可能影响电池使用时间</string>
+    <string name="hw_today_step">&#160;步</string>
+    <string name="hw_target_completion">已完成</string>
+    <string name="hw_ld_title">平安有约健康行</string>
+    <string name="hw_ld_tip1">连续5天以上完成5000步可以获得抽奖机会。你还需要坚持%1$s天即可获得奖励哦！</string>
+    <string name="hw_ld_tip2">今天走完5000步既可获得1次抽奖机会！\r\n马上开始运动吧！</string>
+    <string name="hw_ld_tip3">恭喜您昨天运动达标获得一次抽奖机会，今天走完5000步还可获得1次抽奖机会哦！</string>
+    <string name="hw_ld_tip4">&#160;&#160;代表您获得一次抽奖机会.</string>
+    <string name="hw_btn_invite_friends">&#160;&#160;邀请朋友参加&#160;&#160;</string>
+    <string name="hw_btn_ikonw">&#160;&#160;知道了&#160;&#160;</string>
+    <string name="hw_history_tip1_4">代表您首次完成健康运动达标计划，可获得鸿运运动腰包一个，您的客户经理后续将进行奖品寄送。</string>
+    <string name="hw_history_tip2">代表您运动达标获得一次抽奖机会，点击“活动规则”了解如何获得抽奖机会。</string>
+    <string name="hw_signUp">活动报名</string>
+    <string name="hw_setting_tips_text">锦囊说明</string>
+    <string name="hw_setting_query_text">计步不准</string>
+    <string name="hw7_emojierain_text">健康行走6666步，新春灯笼雨洒落新春祝福，祝您新年快乐、身体健康、阖家欢乐，平平安安又一年！</string>
+    <string name="hw7_emojierain_dailogtext">健康行走6666步，您已成功召唤新春灯笼雨！快进入朋友圈，共享新春祝福吧！</string>
+    <string name="hw7_emojierain_dailogtitle">点亮新春许愿灯</string>
+    <string name="hw7_emojierain_happynewyear">新年快乐</string>
+    <string name="hw7_emojierain_like">点赞</string>
+    <string name="hw7_emojierain_goodluck">恭喜发财</string>
+    <string name="hw7_emojierain_redpacket">红包</string>
+    <string name="hw7_emojierain_pinan">平平安安</string>
+    <string name="hw7_emojierain_healthwalk">健康行</string>
+    <string name="hw7_emojierain_happybirthday">生日快乐</string>
+    <!-- 健康行end -->
+    <!-- 轻运动start -->
+    <!-- 轻运动end -->
+    <!-- 报名错误提示 -->
+    <string name="name_tip">请输入您的姓名</string>
+    <string name="name_wrong">请填写至少2位汉字或4位英文字符，且总长度不超过38位，只允许汉字和英文字母、半角点号“.”、全角点号“·”及“．”</string>
+    <string name="phone_tip">请输入您的手机号码</string>
+    <string name="phone_wrong">请填写正确的11位手机号</string>
+    <string name="agen_tip">请输入客户经理代码</string>
+    <string name="agen_wrong">请输入正确的客户经理代码</string>
+    <string name="identifyCode_tip">请输入验证码</string>
+    <string name="identifyCode_wrong">请输入正确的验证码</string>
+    <string name="password_tip">请输入密码</string>
+    <!-- 报名错误提示end -->
+    <!-- 健康行走朋友圈start -->
+    <!-- 健康行走朋友圈end -->
+
+
+    <string name="so_tip1">您使用的视频通话功能需要更新组件，是否更新？</string>
+    <string name="so_cradrecog">您使用的证件识别功能需要更新组件，是否更新？</string>
+    <string name="so_tip2">正在检查文件。</string>
+
+    <string name="hello_world">Hello world!</string>
+    <!-- 第三季活动start-->
+    <string name="Season3_SignUpTip">您前一季参加活动时的客户经理已离职，请更换客户经理代码参加活动</string>
+    <!-- 第三季活动end-->
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- 社交云聊天 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="copy">复制</string>
+    <string name="convrt">转发</string>
+    <string name="delete">删除</string>
+    <string name="send">发送</string>
+
+    <string name="video_size_limited">您拍摄的视频超过时间限制</string>
+    <string name="video_capture_flag">REC</string>
+    <string name="video_choose_size_limited">您选择的视频大小不能超过%1$sM</string>
+    <string name="chat_video_get_error">无法获取视频文件</string>
+    <string name="chat_video_valid_error">不支持此视频格式!</string>
+    <string name="chat_video_valid_file">视频文件不可用!</string>
+    <string name="chat_video_size">该视频文件压缩后的大小为</string>
+    <string name="chat_video_capture_zero_tips">您拍摄的视频大小为0k， 请重新拍摄</string>
+    <string name="chat_video_sure_send">k， 您是否确定发送.</string>
+
+    <string name="text_bottom_hold_to_talk">按住  说话</string>
+    <string name="text_bottom_release_to_finish">松开  结束</string>
+    <string name="chat_user_card">名片</string>
+    <string name="chat_msg_isRepeat">是否重发？</string>
+    <string name="chat_msg_repeat">重发</string>
+    <string name="chat_msg_isdowload">是否重新下载？</string>
+    <string name="chat_msg_dowload">下载</string>
+    <string name="audio_count_down">录音时间还剩<xliff>%d</xliff>秒</string>
+    <string name="function_expression">表情</string>
+    <string name="function_photo">照片</string>
+    <string name="function_photograph">拍摄</string>
+    <string name="function_position">位置</string>
+    <string name="function_businesscard">名片</string>
+    <string name="function_dialogue">实时对讲</string>
+    <string name="function_video">视频聊天</string>
+    <string name="function_voice_input">语音输入</string>
+    <string name="function_redpacket">红包</string>
+    <string name="chat_file_not_exist">文件下载未成功!</string>
+    <string name="chat_audio_text">检测到录音失败，请开启平安金管家APP录音权限!</string>
+    <string name="chat_audio_sure">我知道了</string>
+    <string name="chat_choose_reminder">选择提醒的人</string>
+    <!-- 视频 -->
+    <string name="video_capture_title">录制</string>
+    <string name="video_start_capture">开始录制</string>
+    <string name="video_restart_capture">重新录制</string>
+    <string name="video_capture_finish">完成</string>
+    <string name="complete">完成</string>
+    <string name="video_play_title">播放</string>
+    <string name="get_camera_error_tips">开启相机失败，请确定摄像权限已开启并重新尝试</string>
+    <string name="chat_video_Text">我们发现您的录像文件异常，请确认平安金管家APP可访问您的摄像权限，并重新拍摄。</string>
+    <string name="give_up_operating_and_back">确定放弃操作并返回吗？</string>
+    <string name="dialog_validate_video">正在验证视频文件...</string>
+    <!-- 聊天界面 录制音频 -->
+    <string name="rec_time_too_short">"时间太短啦"</string>
+    <string name="rec_fling_up_cancel_send">"手指上滑，取消发送"</string>
+    <string name="rec_fling_loosen_cancel_send">"松开取消语音发送"</string>
+    <string name="copy_successful">"复制成功"</string>
+    <string name="dialog_default_text">正在操作&#8230;</string>
+    <string name="message_send">正在发送</string>
+    <string name="load_fail_by_network">网络连接超时，请检查您的网络设置或重试。</string>
+    <string name="version_update_title_find_last">发现新版本</string>
+    <string name="version_update_is_last">您使用的已经是最新版本</string>
+    <string name="fetch_source_bitmap_url_faied">获取原图地址失败</string>
+    <string name="group_member_iskick">您已退出群聊,不能发送消息</string>
+    <!-- 添加好友 -->
+    <string name="batch_add_friend">添加朋友</string>
+    <string name="move_to_blacklist">加入黑名单</string>
+    <string name="move_to_friends">移出黑名单</string>
+    <!-- common -->
+    <string name="common_image_description">图片&#8230;</string>
+    <string name="common_image_compress_doing">正在处理图片&#8230;</string>
+    <string name="common_sdcard_tip">请插入SD卡</string>
+    <string name="clip_error">处理失败！请尝试重新选择图片</string>
+    <!-- 相册 -->
+    <string name="photo_album_title">相册</string>
+    <string name="photo_album_choice_title">选择图片</string>
+    <string name="photo_max_choose">您最多只能选择%1$s张图片</string>
+    <string name="sure_choose">确定(%1$s)</string>
+    <string name="empty_photo">没有照片或者您已关闭平安金管家APP访问相册的权限</string>
+    <string name="photo_gif_warn">暂不支持200K以上GIF格式图片发送</string>
+    <!-- 显示大图片 -->
+    <string name="show_larger_img_save_fail">保存图片失败</string>
+    <string name="show_larger_img_save_finish">已保存到手机相册</string>
+    <string name="show_larger_img_save_memorry_error">手机内存不足，保存失败</string>
+    <string name="show_larger_img_save_sdcard_isnull">手机无sd卡，保存失败</string>
+    <!-- 扬声器相关 -->
+    <string name="conver_to_speakerphone">当前为扬声器模式播放</string>
+    <!-- 聊天页面未读消息提示 -->
+    <string name="unread_msg_count_tips">%1$s条新消息</string>
+    <string name="new_unread_msg_tips">以下为新消息</string>
+    <string name="notification_normal">%1$s:%2$s</string>
+    <string name="notification_one">%1$s发来%2$d条消息</string>
+    <string name="notification_more">%1$s个联系人发来%2$d条消息</string>
+    <string name="notification_image">发来一张图片</string>
+    <string name="notification_video">发来一段视频</string>
+    <string name="notification_audio">发来一条语音消息</string>
+    <string name="notification_vcard">发来一张名片</string>
+    <string name="notification_location">发来一条位置信息</string>
+    <string name="dialog_clear_msg_chat">清空聊天记录将删除所有的聊天记录，是否确认清空？</string>
+    <string name="dialog_kick_msg_chat">您的账号在另一台手机上登录，请注意账号安全!</string>
+    <string name="dialog_kick_quit_chat">退出</string>
+    <string name="dialog_kick_login_again">重新登录</string>
+    <!-- 公共字体 浅红色 -->
+    <string name="public_account_teletext_read_all">阅读全文</string>
+    <string name="chat_warn_msg">温馨提醒：本朋友圈为客户间互动交流，互动内容不代表公司立场！</string>
+    <string name="cpu_err">抱歉，该功能暂不支持64位CPU！</string>
+    <!-- group_chat_setting 聊天设置 -->
+    <string name="group_group_exit">退出后，将不再接受此群聊消息</string>
+    <string name="group_remove_ing">正在移除联系人...</string>
+    <!-- chatSeting 聊天设置 -->
+    <string name="cs_groupname">圈名称</string>
+    <string name="cs_msg_notifi">圈消息设置</string>
+    <string name="cs_no_name">未命名</string>
+    <!-- detailedsetting 详细设置 -->
+    <string name="ds_nicname">我的圈名片</string>
+
+    <!-- PullToRefreshView -->
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开刷新</string>
+    <string name="header_hint_refresh_loading">刷新中&#8230;</string>
+    <string name="header_hint_refresh_time">上一次刷新时间：</string>
+    <string name="footer_hint_load_normal">点击加载更多</string>
+    <string name="footer_hint_load_normal_prize">上滑加载更多记录</string>
+
+    <!-- 人脸识别 -->
+    <string name="eauth_null"></string>
+    <string name="eauth_ok">确认</string>
+    <string name="eauth_start_detect">开启检测</string>
+    <string name="eauth_detect">活体</string>
+    <string name="eauth_quality">高质量</string>
+    <string name="eauth_open_sound">声音</string>
+    <string name="eauth_live_countdown">倒计时</string>
+    <string name="eauth_wear_glasses">带眼镜</string>
+    <string name="eauth_code_success">拍照完成</string>
+    <string name="eauth_code_actionblend">在做规定动作时, 混入了其他不应该出现的动作</string>
+    <string name="eauth_code_notvideo">发现使用者再使用非连续的图像进行活体攻击</string>
+    <string name="eauth_timeout">检测超时</string>
+    <string name="eauth_message_failure_tips_up">请避免拍摄光线过强或过弱</string>
+    <string name="eauth_message_failure_tips_down">并在规定时间内完成指定动作</string>
+    <string name="eauth_face_to_camera">请正对摄像头</string>
+    <string name="eauth_for_example_text">您正在办理平安金管家%1$s业务</string>
+    <!-- 人脸识别 -->
+
+    <!--健康行4期-->
+    <string name="hw_kits_rules_one">每累计5天每天行走5000步及以上即可领取一个"行走达标锦囊“(累计天数不重复)。</string>
+    <string name="hw_kits_rules_two">若当日未完成每日5000步行走目标, 第二日可使用一个锦囊抵扣前一日未完成的步数, 使用后前一日步数自动调整为5000步</string>
+    <string name="hw_kits_rules_third">锦囊仅能抵换使用日期前一日的行走达标记录</string>
+    <string name="hw_kits_rules_four">锦囊领取后立即生效, 有效期至活动截止日</string>
+    <string name="hw_kits_rules_five">第个锦囊只可使用一次</string>
+
+    <string name="hw_game_rules_fifth_one">@string/hw_game_rules_fourth_two</string>
+    <string name="hw_game_rules_fifth_two">“历史累计”步数为参与人参加活动之日起截至当日前一天的累计数据</string>
+    <string name="hw_game_rules_fifth_three">健康勋章：每累计行走30天，且每天5000步及以上，即可获得一颗“健康之心”勋章；每6颗“健康之心”即可获得一颗“健康之树”勋章（含往季）</string>
+    <string name="hw_game_rules_fifth_four">马拉松奖杯：每周平安马拉松日（每周日）达到马拉松标准即可获得一份平安网上马拉松荣誉奖杯【全程、半程、MINI】\n全程——8万步\n半程——4万步\nMINI——11500步</string>
+    <string name="hw_game_rules_fifth_five">需每天手动上传计步数据，才可获得抽奖次数</string>
+    <string name="hw_game_rules_fifth_six">去“抽奖”处了解“抽奖规则”吧，祝您中奖~~</string>
+    <string name="hw_game_rules_fourth_two">健康运动达标计划：每连续5天，每日运动5000步及以上。</string>
+
+    <string name="hw_game_rules_sixth_one">行走步数需要您每天手动上传数据。</string>
+    <string name="hw_game_rules_sixth_two">首次成功挑战健康达标计划（连续5天每天行走5000步及以上）即可获得1元“健康行走奖金”。奖金于24小时内注入客户的旺财账户（客户需开通），该奖励在第六季活动结束后失效。</string>
+    <string name="hw_game_rules_sixth_three">每日行走挑战赛：客户点击“每日挑战”即可参与，系统将于每日7点自动统计前一日挑战成功的用户数量并发放奖金，奖金将兑现至客户旺财账户（客户需开通），该奖励在第六季活动结束后失效。</string>
+    <string name="hw_game_rules_sixth_four">健康勋章：个人每累计行走10天，且每天5000步及以上，即可获得一枚“健康足迹”， 每3颗“健康足迹”即可获得一枚“健康之心”，每6颗“健康之心”即可获得一枚“健康之树”。</string>
+    <string name="hw_game_rules_sixth_five">马拉松勋章：每周日行走步数达到标准即可获得一份平安网上马拉松荣誉勋章：全程50000步、半程25000步、MINI7150步。</string>
+    <string name="hw_game_rules_sixth_six">去“查看奖品”处了解更多吧</string>
+
+    <string name="hw_game_rules_seventh_one">达标添金彩:首次成功挑战健康达标计划 (连续5天每天行走5000步及以上) 即可获得1元健康行走奖金; 1月20日-2月5日期间单日行走9999步即可点亮新春许愿灯笼, 在朋友圈向小伙伴送出新年健康祝福;</string>
+    <string name="hw_game_rules_seventh_two">每日挑战: 参加每日挑战并完成目标行走步数即可参与分配当日挑战大红包, 参与挑战并完成目标行走步数即可参与分配当日挑战大红包, 参与挑战未完成目标, 下次参赛则需点击"挑战加加加"游戏, 接受在原有行走目标基础上增加步数目标;</string>
+    <string name="hw_game_rules_seventh_three">邀请好友: 邀请1名亲友成功参与活动, 即可获得一次抽奖机会, 抽取新春好礼;</string>
+    <string name="hw_game_rules_seventh_four">行走轨迹: 通过查阅"每日行走轨迹"可生成当日行走轨迹地图; 通过查阅"行走轨迹"可生成历史行走轨迹地图;</string>
+    <string name="hw_game_rules_seventh_five">我的记录: 可查阅历史行走数据, 及行走勋章获得情况; 每天行走5000步及以及, 每累计10天即可儿得一枚"健康足迹"勋章, 每累计30天即可获得一攻"健康之心"勋章, 每6枚"健康之心"勋章即可获得一枚"健康之树勋章 (含往季) ;</string>
+    <string name="hw_game_rules_seventh_six">个人在每周平安马拉松日 (每周日) 达到马拉松标准即可获得一份平安网上马拉松荣誉勋章 (全程、半程、MINI) 。</string>
+
+    <string name="mine_about_share_text2">平安金管家APP，轻松管理保单，乐享精彩活动，尊享专属服务！请点击链接下载</string>
+    <!--健康圈子-->
+    <string name="hc_gethealthnews_failed">获取健康资讯失败</string>
+    <string name="hc_getjkxwzslist_failed">获取健康行为指数排行失败</string>
+    <string name="hc_jbz_list">健步走排行</string>
+    <string name="hc_jkxwzs_list">健康行为指数排行</string>
+    <string name="hc_jkxwzs">健康行为指数:</string>
+    <string name="hc_stepcount">步数:</string>
+    <string name="hc_ranking">排名:</string>
+    <string name="hc_yesterday">昨日</string>
+    <string name="hc_today">今日</string>
+    <string name="hc_total">累计</string>
+    <string name="hc_qjb">去计步</string>
+    <string name="hc_jkhd">健康活动</string>
+    <string name="hc_wys">健康医生</string>
+    <string name="hc_jkpc">健康评测</string>
+    <string name="hc_jkxg">健康习惯</string>
+    <string name="hc_jkzx">健康资讯</string>
+    <string name="hc_jkkc">健康课程</string>
+    <string name="hc_behave_index_title">健康行为指数详情</string>
+    <string name="hc_video_title">健康课程详情</string>
+    <string name="notification_enable">接收消息并提醒</string>
+    <string name="notification_disable">接收消息但不提醒</string>
+    <string name="health_circle_all_members">全部圈成员(%1$s)</string>
+    <string name="health_circle_all_members_title">圈成员(%1$s)</string>
+    <!-- Mobile network settings screen, toast when searching for available networks -->
+    <string name="load_networks_progress">Searching\u2026</string>
+    <string name="retry">Retry</string>
+
+    <string name="add_bank_card_explanation">
+        支持以下银行的借记卡，中国工商银行、中国建设银行、中国农业银行、平安银行、华夏银行、中国光大银行、中信银行、上海银行、兴业银行、中国邮政储蓄银行、中国银行。
+    </string>
+    <string name="add_bank_card_insurance">资金安全由平安保险承保</string>
+    <string name="fund_first_account_description">账户余额等于平安大华基金作为基金销售服务主体的平安大华日增利货币基金份额。\n
+        货币基金不等同银行存款，基金有风险，投资需谨慎。\n旺财账户相关服务由平安付提供。
+    </string>
+    <string name="product_type_baoxian">保险</string>
+    <string name="product_type_licai">理财</string>
+    <string name="product_type_life">生活</string>
+
+    <string name="send_redpacket">发红包</string>
+    <string name="redpacket_detail">红包详情</string>
+    <string name="redpacket_mygrab">收到的红包</string>
+    <string name="redpacket_mysend">发出的红包</string>
+    <string name="redpacket_money_note1">总金额</string>
+    <string name="redpacket_money_note2">单个金额</string>
+    <string name="redpacket_money_hint1">填写红包总金额</string>
+    <string name="redpacket_money_hint2">填写红包金额</string>
+    <string name="redpacket_type_note1">当前为拼手气红包，每人抽到的红包随机，</string>
+    <string name="redpacket_type_note2">当前为普通红包，群里每人收到固定金额，</string>
+    <string name="redpacket_changetype1">改为普通红包</string>
+    <string name="redpacket_changetype2">改为拼手气红包</string>
+    <string name="redpacket_random">发了一个红包，金额随机</string>
+    <string name="redpacket_state_dongjie">红包金额暂不可用，3日内开通旺财账户红包金额自动转入；超期未开通，红包金额将退回</string>
+    <string name="redpacket_state_zhuanzhang">红包金额转入旺财账户中，请稍候</string>
+    <string name="redpacket_state_guoqi">抢到红包3日内未开通旺财，红包金额已退回至发红包人的旺财账户</string>
+
+
+    <item name="life_assistant_good_qua_tag_first" type="id"></item>
+    <item name="life_assistant_good_qua_tag_second" type="id"></item>
+    <item name="life_assistant_good_qua_tag_third" type="id"></item>
+    <item name="life_assistant_type_tag" type="id"></item>
+    <item name="life_assistant_position_tag" type="id"></item>
+    <item name="life_assistant_position_tdid" type="id"></item>
+    <string name="redpacket_normal">给你发了一个红包</string>
+    <string name="redpacket_tip0">红包个数不能为0</string>
+    <string name="redpacket_tip1">单个红包金额不可超过200元</string>
+    <string name="redpacket_tip2">单个红包金额不可低于0.01元</string>
+    <string name="redpacket_tip3">单次红包个数不可超过100个</string>
+    <string name="redpacket_tip4">单次支付总额不可超过5000元</string>
+    <string name="redpacket_tip5">当日红包总额不可超过5000元</string>
+    <string name="redpacket_grab_none">手慢了，红包派完了</string>
+    <string name="redpacket_open_wangcai">立即开通旺财</string>
+
+    <string name="splash_count_down">跳过 </string>
+    <string name="no_bought_product_tip">您还没购买过产品\n赶快去购买吧</string>
+    <string name="comment_product">评价产品</string>
+    <string name="input_comment_please">请输入评论</string>
+    <string name="add_comment_success">添加评论成功！</string>
+    <string name="product_error">产品信息错误！</string>
+    <string name="product_type_jijin">基金</string>
+    <string name="product_type_fuyingrensheng">富盈人生</string>
+    <string name="product_type_lujinsuo">陆金所</string>
+    <string name="product_type_xuqibao">续期宝</string>
+    <string name="product_type_shenghuozhushou">生活助手</string>
+    <string name="product_type_haoyishengka">好医生卡</string>
+    <string name="click_to_details">点击查看详情</string>
+    <string name="filter">筛选</string>
+    <string name="select_near_agent">选择附近专员</string>
+    <string name="locating">定位中…</string>
+    <string name="format_current_location_text">当前位置：%1$s</string>
+    <string name="locate_failed">定位失败！</string>
+    <string name="invalid_location_info">无效的位置信息</string>
+
+    <string name="policy_login_tip1">我们为您提供全方位的保单服务，请使用一账通登录APP</string>
+
+    <string name="express_no">物流单号</string>
+    <string name="express_sweep">扫一扫，更快捷</string>
+    <string name="express_company">物流公司</string>
+    <string name="express_company_name">物流公司名称</string>
+    <string name="express_company_choose">请选择物流公司</string>
+    <string name="express_btn_find">查询</string>
+    <string name="express_btn_cancle">取消</string>
+    <string name="format_baodan_num_text">保单号：%1$s</string>
+    <string name="format_baodan_date_text">保险期间：%1$s至%2$s</string>
+    <string name="format_baodan_carnum_text">订单号：%1$s</string>
+    <string name="format_baodan_cardate_text">支付时间：%1$s</string>
+    <string name="format_rmb_price_text">￥%1$s</string>
+    <string name="format_end_date_text">到期时间：%1$s</string>
+    <string name="format_begin_date_text">买入时间：%1$s</string>
+    <string name="format_expected_payoff_text">预期收益：￥%1$s</string>
+    <string name="comment">评价</string>
+    <string name="format_order_num_text">订单号：%1$s</string>
+    <string name="format_order_date_text">下单时间：%1$s</string>
+    <string name="format_x_text">x%1$s</string>
+    <string name="commit_comment">提交评价</string>
+    <string name="format_life_product_total_info_text">共%1$s件商品 合计 ￥%2$s （含运费￥0.00）</string>
+    <string name="emp_code_or_mobile_input_error">请输入正确的专员代码或手机号</string>
+    <string name="find_agent_failed_by_code_error">您输入的不是服务专员的代码或手机号，请重新输入！</string>
+    <string name="filter_agent">筛选专员</string>
+    <string name="select_correct_location_info_please">请选择正确的位置信息</string>
+    <string name="all">全部</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="confirm_select">确定选择</string>
+    <string name="change">更改</string>
+    <string name="e_profile_detail">客户经理详情</string>
+    <string name="search_agent">查找服务专员</string>
+    <string name="search">查询</string>
+    <string name="input_agent_code_or_mobile_please">输入服务专员的代码或手机号</string>
+    <string name="search_result">查询结果</string>
+    <string name="format_filter_condition_text">筛选：%1$s</string>
+    <string name="location">位置</string>
+    <string name="click_to_select_please">请点击选择</string>
+    <string name="age">年龄</string>
+    <string name="sex">性别</string>
+    <string name="format_agent_code_text">专员代码 %1$s</string>
+    <string name="express_no_tips">*请填写物流单号</string>
+
+    <!--生活助手-->
+    <string name="life_assistant_title">生活助手</string>
+
+    <!--主账户-->
+    <string name="mainaccount_open_tips3">旺财账户对接平安大华日增利货币基金，平安大华基金为基金销售服务主体。账户相关服务由平安付及平安银行提供。</string>
+    <string name="fund_front_service_agreement">《基金前置服务协议》</string>
+    <string name="mainacount_transfer_limit">《转账限额》</string>
+    <string name="mainaccount_revenue_rule">《收益规则》</string>
+    <string name="mainaccount_transfer_out_rule">《转出规则》</string>
+    <string name="mainaccount_normal_retruen_account">普通到账</string>
+    <string name="mainaccount_fast_return_account">快速到账</string>
+
+    <!--健步行第六季-->
+    <string name="jkx6_challenge_title1">每日挑战</string>
+    <string name="jkx6_challenge_title2">上次挑战失败</string>
+    <string name="jkx6_challenge_title3">挑战目标</string>
+    <string name="jkx6_challenge_title4">挑战成功</string>
+    <string name="jkx6_challenge_title5">挑战失败</string>
+
+    <string name="jkx6_challenge_not_join">下次再来</string>
+    <string name="jkx6_challenge_join">立即参赛</string>
+    <string name="jkx6_challenge_tomorrow">明天再来</string>
+    <string name="jkx6_challenge_accept">接受挑战</string>
+    <string name="jkx6_challenge_known">知道了</string>
+    <string name="jkx6_challenge_show">炫耀一下</string>
+    <string name="jkx6_challenge_show1">向大家炫耀一下</string>
+    <string name="jkx6_challenge_confirm">确定</string>
+
+    <string name="jkx6_tips1">今日内行走%1$s步，即可获得红包\n已有%2$s人参加</string>
+    <string name="jkx6_tips2">挑战赛每日7点开始\n请稍后参加</string>
+    <string name="jkx6_tips3">今日内行走%1$s步，即可获得红包\n您已参加挑战</string>
+    <string name="jkx6_tips4">请进入“挑战加加加”转盘\n接受增加挑战目标步数</string>
+    <string name="jkx6_tips5">您今日行走挑战目标将增加%1$s步\n共计%2$s步！加油吧</string>
+    <string name="jkx6_tips6">昨日共有%1$s人挑战成功\n您获得%2$s元红包</string>
+    <string name="jkx6_tips7">今天将增加挑战难度\n转盘为您制定目标步数</string>
+    <string name="jkx6_tips8">今日已有%1$s人参与平安行走日日赢挑战赛</string>
+    <string name="jkx6_prisenum">累计点赞数: %1$s，去逛一逛商城吧~</string>
+    <string name="title_input_identify_code">输入验证码</string>
+    <string name="edit_input_identify_code">请输入验证码</string>
+
+    <string name="throw_error_context_instance_of_activity">设置的context必须是BaseActivity的上下文</string>
+    <string name="la_illegal_url_tip1">您即将访问的链接尚未经过平安金管家APP审核,可能存在盗链风险,建议不要继续浏览</string>
+    <string name="la_illegal_url_tip2"><u>我已了解风险,仍要继续访问该链接(不推荐)</u></string>
+
+    <!--意见反馈-->
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_select_category_hint">请选择反馈的问题类型</string>
+    <string name="feedback_user_name">姓名</string>
+    <string name="feedback_city">所在城市</string>
+    <string name="feedback_gender">性别</string>
+    <string name="feedback_phone">手机号码</string>
+    <string name="feedback_event_time">发生时间</string>
+    <string name="feedback_edit_hint">请输入您的意见(字数小于500字)</string>
+    <string name="feedback_commit_log">本人同意上传平安金管家APP的日志文件以便程序猿定位解决问题</string>
+    <string name="feedback_network_state_hint">您当前处在移动网络环境,上传需要较多流量,建议在WIFI环境下提交。</string>
+    <string name="no_network">当前网络不可用，请检查网络!</string>
+    <string name="feedback_camera_photo_failure">载入拍摄照片失败</string>
+    <string name="feedback_dialog_title">温馨提示</string>
+    <string name="feedback_full_picture_hint">最多只能上传9张图片</string>
+    <string name="feedback_picture_compressing">图片未压缩完毕,请等待</string>
+    <string name="feedback_select_city">请选择城市</string>
+    <string name="feedback_select_date">"日期选择"</string>
+    <string name="feedback_input_content_hint">请先输入反馈内容！</string>
+    <string name="feedback_input_gender_hint">请选择性别</string>
+    <string name="feedback_input_city_hint">请先选择城市</string>
+    <string name="feedback_input_phone_error">手机号输入错误</string>
+    <string name="feedback_input_phone_hint">请输入手机号</string>
+    <string name="feedback_female">先生</string>
+    <string name="feedback_male">女士</string>
+    <string name="feedback_submit">继续提交</string>
+    <string name="feedback_cancel">下次再说</string>
+    <string name="feedback_picture_verify_failure">图片验证码输入错误</string>
+    <string name="feedback_success">提交成功</string>
+    <string name="feedback_failed">提交失败</string>
+    <string name="feedback_content_hint">问题：%s</string>
+
+    <string name="open_steal_insurance_title">开启百万银行卡安全保障</string>
+    <string name="delete_bank_card_dialog">您即将解除该卡的绑定，盗刷卫士将自动换防，为您的新银行卡执勤。\n如您不再继续绑卡，请拨打95511进行退保咨询。</string>
+
+    <!-- 保单 -->
+    <string name="policy_title">寿险保单服务</string>
+    <string name="policy_people_hello">%s, 您好！</string>
+    <string name="policy_hello">您好！</string>
+    <string name="policy_my_insurance_policy">我的寿险保单</string>
+    <string name="policy_need_more_ensure">您和家人的保障真的够了吗?</string>
+    <string name="policy_click_get_more">点击查看保障缺口</string>
+    <string name="policy_phone_num">手机号：</string>
+    <string name="policy_card_check">请检视</string>
+    <string name="policy_no_data_hint">您当前尚无寿险保单，无法使用本功能!</string>
+    <string name="policy_no_data_todo">看看在售商品</string>
+    <string name="policy_load_failed_hint">加载失败，再刷新一下试试吧！</string>
+    <string name="policy_load_failed_todo">刷新</string>
+    <string name="policy_login_timeout_dialog_title">提示</string>
+    <string name="policy_login_timeout_dialog_content">登录超时，为保护您的信息安全，请重新登录一账通。</string>
+    <string name="policy_login_timeout_dialog_back_home">返回首页</string>
+    <string name="policy_login_timeout_dialog_relogin">重新登录</string>
+    <string name="policy_num_with_people">名下%s张保单</string>
+    <string name="config_click_no_data">功能升级中，敬请期待...</string>
+
+    <!-- 一账通 -->
+    <string name="yzt_login_timeout_dialog_title">提示</string>
+    <string name="yzt_login_timeout_dialog_hint">一账通全程保护您的保单信息安全，登录成功后超过十五分钟未使用需要重新登录，您也可进入“我的”模块点击退出。</string>
+    <string name="yzt_login_timeout_dialog_ok">确定</string>
+
+    <!--活动改版-->
+    <string name="start_parun">开始平安RUN</string>
+    <string name="join_parun">我要参加平安RUN</string>
+    <string name="sign_ok">报名成功</string>
+    <string name="prized_list">中奖名单</string>
+    <string name="detail_refresh">点击重试</string>
+    <string name="activities_detail">活动详情</string>
+    <string name="activities_canreceive">待领取奖品</string>
+    <string name="activities_prize_exception">奖品数据解析异常</string>
+    <string name="activities_requirerecord">领取记录</string>
+    <string name="activities_notreceivedprize">目前没有奖品</string>
+    <string name="activities_gotoactivity">去看看活动</string>
+    <string name="has_join">已参加活动</string>
+    <string name="want_join">我要参加活动</string>
+    <string name="due_count">活动倒计时：</string>
+    <string name="activity_detail_refresh">加载失败，请点击重试</string>
+    <string name="activity_loading">加载中...</string>
+
+    <string name="timezone_change_tips">金管家检测到您目前处于非北京时区，系统将按照北京时区进行步数上传统计，
+        可能造成步数统计不准确，敬请谅解。\n\n您也可至设置的”日期和时间”中设置为北京时区</string>
+    <string name="coupon_exception_tips">哎呦,系统开小差,没能获取您的优惠券\n\n点击图片重试吧</string>
+    <!--主账号-->
+    <string name="mainaccount_title_open_wangcai">您尚未开通旺财账户，是否立即开户？</string>
+    <string name="mainaccount_set_pay_pas_tips">您的旺财账户尚未设置支付密码，是否立即设置？</string>
+    <string name="mainaccount_bind_bank_card_tips">您的旺财账户尚未绑定银行卡，是否立即绑卡？</string>
+    <string name="mainaccount_open_wangcai">开通旺财</string>
+    <string name="mainaccount_active_account_tips">您的旺财账户尚未激活，请绑定本人银行卡完成激活。</string>
+    <string name="add_bank_card">添加银行卡</string>
+    <string name="add_credit_card">添加信用卡</string>
+    <!--生活助手-->
+    <string name="today_deal_original_price">原价: </string>
+    <string name="today_deal_sale_price">特价￥</string>
+
 </resources>
