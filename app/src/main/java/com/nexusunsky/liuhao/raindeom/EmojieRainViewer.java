@@ -1,5 +1,6 @@
 package com.nexusunsky.liuhao.raindeom;
 
+import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Context;
@@ -97,8 +98,8 @@ public class EmojieRainViewer {
             for (int i = 0; i < mCount; i++) {
                 ImageView emoji = new ImageView(context);
                 emoji.setImageResource(mResId);
-                ViewGroup.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
-                        dip2px(context, 27), dip2px(context, 27));
+                ViewGroup.LayoutParams layoutParams = new RelativeLayout
+                        .LayoutParams(dip2px(context, 33), dip2px(context, 33));
                 views.add(emoji);
                 rainRoot.addView(emoji, 1, layoutParams);
                 mViewCount = i;
@@ -110,8 +111,10 @@ public class EmojieRainViewer {
             for (ObjectAnimator yanimator : objectAnimators) {
                 ObjectAnimator xanimator = mAnimators.get(yanimator);
                 if (!yanimator.isRunning() && !xanimator.isRunning()) {
-                    yanimator.start();
-                    xanimator.start();
+                    AnimatorSet set = new AnimatorSet();
+                    set.play(xanimator).with(yanimator);
+                    set.setInterpolator(new AccelerateInterpolator(1.2f));
+                    set.start();
                 }
             }
         }
@@ -136,16 +139,25 @@ public class EmojieRainViewer {
     private void createAnimator(int fallenTiem, int emojicount) {
         for (int i = 0; i < emojicount; i++) {
             ImageView view = views.get(i);
-            view.setY(-(new Random().nextInt(dip2px(context, 110)) + dip2px(context, 7)));
-            view.setX(new Random().nextInt(screenWidth - dip2px(context, 17)) + screenWidth);
-            ObjectAnimator yAnimator = ObjectAnimator.ofFloat(
-                    view, "translationY", view.getY(), (float) (screenHeight))
-                    .setDuration(new Random().nextInt(1700) + fallenTiem);
-            ObjectAnimator xAnimator = ObjectAnimator.ofFloat(
-                    view, "translationX", view.getX(), new Random().nextInt(screenWidth - dip2px(context, 50)))
-                    .setDuration(new Random().nextInt(1700) + fallenTiem);
-            yAnimator.setInterpolator(new AccelerateInterpolator(1.7f));
-            mAnimators.put(yAnimator, xAnimator);
+            view.setY(-new Random().nextInt(dip2px(context, 227) * 7) - dip2px(context, 10));
+            view.setX(new Random().nextInt(screenWidth) + dip2px(context, 27));
+            if (0 == i % 2) {
+                ObjectAnimator yAnimator = ObjectAnimator.ofFloat(view, "translationY",
+                        view.getY(), (float) (screenHeight))
+                        .setDuration(new Random().nextInt(fallenTiem) + 5000);
+                ObjectAnimator xAnimator = ObjectAnimator.ofFloat(view, "translationX",
+                        view.getX(), screenWidth / 2 + new Random().nextInt(Math.abs(screenWidth / 3)))
+                        .setDuration(new Random().nextInt(fallenTiem) + 5000);
+                mAnimators.put(yAnimator, xAnimator);
+            } else {
+                ObjectAnimator yAnimator = ObjectAnimator.ofFloat(view, "translationY",
+                        view.getY(), (float) (screenHeight))
+                        .setDuration(new Random().nextInt(fallenTiem) + 5000);
+                ObjectAnimator xAnimator = ObjectAnimator.ofFloat(view, "translationX",
+                        view.getX(), screenWidth / 2 - new Random().nextInt(Math.abs(screenWidth / 3)))
+                        .setDuration(new Random().nextInt(fallenTiem) + 5000);
+                mAnimators.put(yAnimator, xAnimator);
+            }
         }
     }
 
