@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="sss">
+        <attr name="sb" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="ShimmerFrameLayout">
+        <attr name="auto_start" format="boolean"/>
+        <attr name="base_alpha" format="float"/>
+        <attr name="duration" format="integer"/>
+        <attr name="repeat_count" format="integer"/>
+        <attr name="repeat_delay" format="integer"/>
+        <attr name="repeat_mode" format="enum">
+            <enum name="restart" value="1"/>
+            <enum name="reverse" value="2"/>
+        </attr>
+        <attr name="angle" format="enum">
+            <enum name="cw_0" value="0"/>
+            <enum name="cw_90" value="90"/>
+            <enum name="cw_180" value="180"/>
+            <enum name="cw_270" value="270"/>
+        </attr>
+        <attr name="dropoff" format="float"/>
+        <attr name="fixed_width" format="dimension"/>
+        <attr name="fixed_height" format="dimension"/>
+        <attr name="intensity" format="float"/>
+        <attr name="relative_width" format="float"/>
+        <attr name="relative_height" format="float"/>
+        <attr name="shapetype" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+        </attr>
+        <attr name="tilt" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorArcProgressBar">
+        <attr name="back_color" format="color"/>
+        <attr name="front_color1" format="color"/>
+        <attr name="front_color2" format="color"/>
+        <attr name="front_color3" format="color"/>
+        <attr name="front_color4" format="color"/>
+        <attr name="front_color5" format="color"/>
+        <attr name="back_width" format="dimension"/>
+        <attr name="diameter_width" format="dimension"/>
+        <attr name="front_width" format="dimension"/>
+        <attr name="is_need_title" format="boolean"/>
+        <attr name="is_need_content" format="boolean"/>
+        <attr name="is_need_unit" format="boolean"/>
+        <attr name="is_need_dial" format="boolean"/>
+        <attr name="string_title" format="string"/>
+        <attr name="string_unit" format="string"/>
+        <attr name="total_engle" format="integer"/>
+        <attr name="current_value" format="float"/>
+        <attr name="max_value" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcReverse" format="boolean"/>
+        <attr name="rcProgress" format="float"/>
+        <attr name="rcMax" format="float"/>
+        <attr name="rcBackgroundPadding" format="dimension"/>
+        <attr name="rcRadius" format="dimension"/>
+        <attr name="rcProgressColor" format="color"/>
+        <attr name="rcBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="panelHeight" format="dimension"/>
+        <attr name="shadowHeight" format="dimension"/>
+        <attr name="paralaxOffset" format="dimension"/>
+        <attr name="fadeColor" format="color"/>
+        <attr name="flingVelocity" format="integer"/>
+        <attr name="dragView" format="reference"/>
+        <attr name="overlay" format="boolean"/>
+        <attr name="anchorPoint" format="float"/>
+        <attr name="initialState" format="enum">
+            <enum name="expanded" value="0"/>
+            <enum name="collapsed" value="1"/>
+            <enum name="anchored" value="2"/>
+            <enum name="hidden" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleButton">
+        <attr name="cb_color" format="color"/>
+        <attr name="cb_pressed_ring_width" format="dimension"/>
+        <attr name="cb_alpha" format="integer"/>
+    </declare-styleable>
+
+    <!-- imagesliderattr -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="SliderLayout">
+
+        <!-- indicator visibility -->
+        <attr name="indicator_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+
+        <attr name="auto_cycle" format="boolean"/>
+
+        <!-- page animation -->
+        <attr name="pager_animation" format="enum">
+            <enum name="Default" value="0">Default</enum>
+            <enum name="Accordion" value="1">Accordion</enum>
+            <enum name="Background2Foreground" value="2">Background2Foreground</enum>
+            <enum name="CubeIn" value="3">CubeIn</enum>
+            <enum name="DepthPage" value="4">DepthPage</enum>
+            <enum name="Fade" value="5">Fade</enum>
+            <enum name="FlipHorizontal" value="6">FlipHorizontal</enum>
+            <enum name="FlipPage" value="7">FlipPage</enum>
+            <enum name="Foreground2Background" value="8">Foreground2Background</enum>
+            <enum name="RotateDown" value="9">RotateDown</enum>
+            <enum name="RotateUp" value="10">RotateUp</enum>
+            <enum name="Stack" value="11">Stack</enum>
+            <enum name="Tablet" value="12">Tablet</enum>
+            <enum name="ZoomIn" value="13">ZoomIn</enum>
+            <enum name="ZoomOutSlide" value="14">ZoomOutSlide</enum>
+            <enum name="ZoomOut" value="15">ZoomOut</enum>
+        </attr>
+
+        <!-- page animation time span -->
+        <attr name="pager_animation_span" format="integer"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="PagerIndicator">
+        <!-- indicator visibility -->
+        <attr name="visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+
+        <attr name="shape" format="enum">
+            <enum name="oval" value="0"/>
+            <enum name="rect" value="1"/>
+        </attr>
+
+        <attr name="selected_color" format="color"/>
+        <attr name="unselected_color" format="color"/>
+
+        <!-- indicator style -->
+        <attr name="selected_drawable" format="reference"/>
+        <attr name="unselected_drawable" format="reference"/>
+
+        <attr name="selected_width" format="dimension"/>
+        <attr name="selected_height" format="dimension"/>
+
+        <attr name="unselected_width" format="dimension"/>
+        <attr name="unselected_height" format="dimension"/>
+
+        <attr name="padding_left" format="dimension"/>
+        <attr name="padding_right" format="dimension"/>
+        <attr name="padding_top" format="dimension"/>
+        <attr name="padding_bottom" format="dimension"/>
+
+        <attr name="selected_padding_left" format="dimension"/>
+        <attr name="selected_padding_right" format="dimension"/>
+        <attr name="selected_padding_top" format="dimension"/>
+        <attr name="selected_padding_bottom" format="dimension"/>
+
+        <attr name="unselected_padding_left" format="dimension"/>
+        <attr name="unselected_padding_right" format="dimension"/>
+        <attr name="unselected_padding_top" format="dimension"/>
+        <attr name="unselected_padding_bottom" format="dimension"/>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="SliderStyle" format="reference"/>
+        <attr name="PagerIndicatorStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PAEditTextStyle">
+        <attr name="text" format="string"></attr>
+        <attr name="paddingRight" format="dimension"></attr>
+        <attr name="paddingLeft" format="dimension"></attr>
+        <attr name="paddingTop" format="dimension"></attr>
+        <attr name="paddingBottom" format="dimension"></attr>
+        <attr name="wealthTextSize" format="integer"></attr>
+        <attr name="wealthTextColor" format="reference|color"></attr>
+        <attr name="hint" format="string"></attr>
+        <attr name="hintTextColor" format="reference|color"></attr>
+        <attr name="numeric" format="string"></attr>
+        <attr name="maxLength" format="integer"></attr>
+        <attr name="password" format="boolean"></attr>
+        <attr name="singleLine" format="boolean"></attr>
+        <attr name="background2" format="reference|color"></attr>
+        <attr name="gravity" format="reference|color"></attr>
+        <attr name="del_margin_right" format="dimension"></attr>
+        <attr name="isStartZero" format="boolean"></attr>
+        <attr name="inputMethod" format="integer"></attr>
+        <attr name="decimal" format="boolean"></attr>
+        <attr name="decimalLength" format="integer"></attr>
+        <attr name="focusDrawable" format="reference|color"></attr>
+        <attr name="noFocusDrawable" format="reference|color"></attr>
+        <attr name="digits" format="string"></attr>
+        <attr name="inputType">
+            <flag name="none" value="0x00000000"/>
+            <flag name="text" value="0x00000001"/>
+            <flag name="textCapCharacters" value="0x00001001"/>
+            <flag name="textCapWords" value="0x00002001"/>
+            <flag name="textCapSentences" value="0x00004001"/>
+            <flag name="textAutoCorrect" value="0x00008001"/>
+            <flag name="textAutoComplete" value="0x00010001"/>
+            <flag name="textMultiLine" value="0x00020001"/>
+            <flag name="textImeMultiLine" value="0x00040001"/>
+            <flag name="textNoSuggestions" value="0x00080001"/>
+            <flag name="textUri" value="0x00000011"/>
+            <flag name="textEmailAddress" value="0x00000021"/>
+            <flag name="textEmailSubject" value="0x00000031"/>
+            <flag name="textShortMessage" value="0x00000041"/>
+            <flag name="textLongMessage" value="0x00000051"/>
+            <flag name="textPersonName" value="0x00000061"/>
+            <flag name="textPostalAddress" value="0x00000071"/>
+            <flag name="textPassword" value="0x00000081"/>
+            <flag name="textVisiblePassword" value="0x00000091"/>
+            <flag name="textWebEditText" value="0x000000a1"/>
+            <flag name="textFilter" value="0x000000b1"/>
+            <flag name="textPhonetic" value="0x000000c1"/>
+            <flag name="textWebEmailAddress" value="0x000000d1"/>
+            <flag name="textWebPassword" value="0x000000e1"/>
+            <flag name="number" value="0x00000002"/>
+            <flag name="numberSigned" value="0x00001002"/>
+            <flag name="numberDecimal" value="0x00002002"/>
+            <flag name="numberPassword" value="0x00000012"/>
+            <flag name="phone" value="0x00000003"/>
+            <flag name="datetime" value="0x00000004"/>
+            <flag name="date" value="0x00000014"/>
+            <flag name="time" value="0x00000024"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="CircleProgresBar">
+        <attr name="innerCircleRadius" format="dimension"></attr>
+        <attr name="innerCircleColor" format="reference|color"></attr>
+
+        <attr name="middleCircleRadius" format="dimension"></attr>
+        <attr name="middleCircleWidth" format="dimension"></attr>
+        <attr name="middleCircleColorNormal" format="reference|color"></attr>
+        <attr name="middleCircleColorProgress" format="reference|color"></attr>
+
+        <attr name="excirclACircleRadius" format="dimension"></attr>
+        <attr name="excirclACircleWidth" format="dimension"></attr>
+        <attr name="excirclACircleColorNormal" format="reference|color"></attr>
+        <attr name="excirclACircleColorProgress" format="reference|color"></attr>
+        <attr name="excirclACircleTextSize" format="dimension"></attr>
+        <attr name="excirclACircleTextColorNormal" format="reference|color"></attr>
+        <attr name="excirclACircleTextColorProgress" format="reference|color"></attr>
+
+        <attr name="excirclBCircleRadius" format="dimension"></attr>
+        <attr name="excirclBCircleWidth" format="dimension"></attr>
+        <attr name="excirclBCircleColorNormal" format="reference|color"></attr>
+        <attr name="excirclBCircleColorProgress" format="reference|color"></attr>
+        <attr name="excirclBCircleStartAngle" format="float"></attr>
+        <attr name="excirclBCircleEndAngle" format="float"></attr>
+        <attr name="excirclBCircleDirection" format="enum">
+            <enum name="clockwise" value="0"/>
+            <enum name="anticlockwise" value="1"/>
+        </attr>
+        <attr name="excirclBCircleProgressIcon" format="reference"></attr>
+    </declare-styleable>
+
+    <attr name="rightPadding" format="dimension"/>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="imroundWidth" format="dimension"/>
+        <attr name="roundHeight" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 自定义抽屉控件属性 -->
+    <attr name="direction">
+        <enum name="rightToLeft" value="0"/>
+        <enum name="bottomToTop" value="1"/>
+        <enum name="leftToRight" value="2"/>
+        <enum name="topToBottom" value="3"/>
+    </attr>
+    <!-- 自定义抽屉控件属性 -->
+    <declare-styleable name="MultiDirectionSlidingDrawer">
+        <attr name="handle" format="reference"/>
+        <attr name="content" format="reference"/>
+        <attr name="direction"/>
+        <attr name="bottomOffset" format="dimension"/>
+        <attr name="topOffset" format="dimension"/>
+        <attr name="allowSingleTap" format="boolean"/>
+        <attr name="animateOnClick" format="boolean"/>
+    </declare-styleable>
+    <!--<declare-styleable name="PullToRefresh">-->
+    <!--<attr name="adapterViewBackground" format="reference|color" />-->
+    <!--<attr name="headerBackground" format="reference|color" />-->
+    <!--<attr name="headerTextColor" format="color" />-->
+    <!--<attr name="mode">-->
+    <!--<flag name="pullDownFromTop" value="0x1" />-->
+    <!--<flag name="pullUpFromBottom" value="0x2" />-->
+    <!--<flag name="both" value="0x3" />-->
+    <!--</attr>-->
+    <!--</declare-styleable>-->
+    <declare-styleable name="LinkifyTextView">
+        <attr name="dynamicGravity" format="boolean"/>
+    </declare-styleable>
+
+    <!--圆形imageview-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <!--<attr name="style">-->
+        <!--<enum name="STROKE" value="0"></enum>-->
+        <!--<enum name="FILL" value="1"></enum>-->
+        <!--</attr>-->
+        <attr name="border_thickness" format="dimension"/>
+        <attr name="border_inside_color" format="color"/>
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color"/>
+        <attr name="inactiveColor" format="color"/>
+        <attr name="radius1" format="dimension"/>
+        <attr name="centered1" format="boolean"/>
+        <attr name="fadeOut" format="integer"/>
+        <attr name="inactiveType">
+            <flag name="stroke" value="0"/>
+            <flag name="fill" value="1"/>
+        </attr>
+        <attr name="activeType">
+            <flag name="stroke" value="0"/>
+            <flag name="fill" value="1"/>
+        </attr>
+        <attr name="circleSeparation" format="dimension"/>
+        <attr name="activeRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PenToolButton">
+        <attr name="strokeWidthMax" format="dimension"/>
+        <attr name="strokeWidthMin" format="dimension"/>
+        <attr name="interpolator" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="SwatchButton">
+        <attr name="SwatchButtoncolor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="PenTypeButton">
+        <attr name="penType">
+            <enum name="whiteboard" value="0"/>
+            <enum name="feltTip" value="1"/>
+            <enum name="airbrush" value="2"/>
+            <enum name="fountainpen" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="lifeAssistantLabel">
+        <attr name="labeltext" format="reference|string"></attr>
+        <attr name="labelsrc" format="reference|integer"></attr>
+        <attr name="imageScaleType">
+            <enum name="fillXY" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WheelView">
+        <attr name="selectedItemDividerColor" format="reference|color"/>
+        <attr name="selectedItemDividerHeight" format="reference|dimension"/>
+        <attr name="drawShadow" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="nine_preview_photo">
+        <attr name="cols" format="integer"/><!--列数-->
+        <attr name="x_divider" format="dimension"/><!--水平方向的间隔-->
+        <attr name="y_divider" format="dimension"/><!--垂直方向的间隔-->
+        <attr name="child_gravity" format="enum"><!--子控件的布局-->
+            <enum name="follow_child" value="0"/><!--按照子控件的布局和大小-->
+            <enum name="wrap_child" value="1"/><!--父控件控制子控件的大小-->
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TabIndicator">
+        <attr name="horizontalSpace" format="reference|integer"></attr>
+        <attr name="fullColor" format="reference|color"></attr>
+        <attr name="indicradius" format="reference|integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="PrizeListView">
+        <attr name="type" format="reference|string"/>
+        <attr name="headtype" format="reference|string"/>
+    </declare-styleable>
+
+    <declare-styleable name="XScrollView">
+        <attr name="XScrollViewheadtype" format="reference|string"/>
+    </declare-styleable>
+
+    <declare-styleable name="EmojileRainViewer">
+        <attr name="accelerateInterpolator" format="reference|float"/>
+    </declare-styleable>
+
+</resources>
