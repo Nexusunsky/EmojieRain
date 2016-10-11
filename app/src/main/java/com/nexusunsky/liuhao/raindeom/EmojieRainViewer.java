@@ -135,26 +135,26 @@ public class EmojieRainViewer {
         }
     }
 
-    private void createAnimator(int fallenTiem, int emojicount) {
+    private void createAnimator(int fallenTime, int emojicount) {
         for (int i = 0; i < emojicount; i++) {
             ImageView view = views.get(i);
-            view.setY(-new Random().nextInt(dip2px(context, 1717)) - dip2px(context, 17));
+            view.setY(-new Random().nextInt(dip2px(context, 2727)) - dip2px(context, 17));
             ObjectAnimator yAnimator = ObjectAnimator.ofFloat(view, "translationY",
-                    view.getY(), (float) (screenHeight)).setDuration(new Random().nextInt(fallenTiem) + 5000);
-            yAnimator.setInterpolator(new AccelerateInterpolator(1.2f));
+                    view.getY(), (float) (screenHeight)).setDuration(new Random().nextInt(fallenTime) + 5000);
+            yAnimator.setInterpolator(new DecelerateInterpolator(1.5f));
             if (0 == (i & 1)) {//奇,偶分离
                 ObjectAnimator xAnimator = ObjectAnimator.ofFloat(view, "translationX",
-                        screenWidth / 2 + new Random().nextInt(dip2px(context, screenWidth / 4)),
-                        screenWidth / 2 - new Random().nextInt(dip2px(context, screenWidth / 4)))
-                        .setDuration(new Random().nextInt(fallenTiem) + 6000);
-                xAnimator.setInterpolator(new AccelerateInterpolator(0.7f));
+                        screenWidth / 2 + new Random().nextInt(screenWidth) / 2,
+                        11 * screenWidth / 28 - new Random().nextInt(screenWidth) / 2)
+                        .setDuration(new Random().nextInt(fallenTime) + 5000);
+                xAnimator.setInterpolator(new DecelerateInterpolator(1.5f));
                 mAnimators.put(yAnimator, xAnimator);
             } else {
                 ObjectAnimator xAnimator = ObjectAnimator.ofFloat(view, "translationX",
-                        screenWidth / 2 - new Random().nextInt(dip2px(context, screenWidth / 4)),
-                        screenWidth / 2 + new Random().nextInt(dip2px(context, screenWidth / 4)))
-                        .setDuration(new Random().nextInt(fallenTiem) + 6000);
-                xAnimator.setInterpolator(new AccelerateInterpolator(0.7f));
+                        screenWidth / 2 - new Random().nextInt(screenWidth) / 2,
+                        11 * screenWidth / 28 + new Random().nextInt(screenWidth) / 2)
+                        .setDuration(new Random().nextInt(fallenTime) + 5000);
+                xAnimator.setInterpolator(new DecelerateInterpolator(1.5f));
                 mAnimators.put(yAnimator, xAnimator);
             }
         }
@@ -206,43 +206,40 @@ public class EmojieRainViewer {
     }
 
     /**
-     * 动画加速器。
+     * 动画减速器
      */
-    public class AccelerateInterpolator implements Interpolator {
-        private final float mFactor;
-        private final double mDoubleFactor;
-
-        public AccelerateInterpolator() {
-            mFactor = 1.0f;
-            mDoubleFactor = 2.0;
+    public class DecelerateInterpolator implements Interpolator {
+        public DecelerateInterpolator() {
         }
 
         /**
-         * Constructor
-         *
-         * @param factor 动画的快慢度。将factor设置为1.0f会产生一条y=x^2的抛物线。
-         *               增加factor到1.0f之后为加大这种渐入效果（也就是说它开头更加慢，结尾更加快）
+         * @param factor 动画的快慢度。将factor值设置为1.0f时将产生一条从上向下的y=x^2抛物线。
+         *               增加factor到1.0f以上将使渐入的效果增强（也就是说，开头更快，结尾更慢）
          */
-        public AccelerateInterpolator(float factor) {
+        public DecelerateInterpolator(float factor) {
             mFactor = factor;
-            mDoubleFactor = 2 * mFactor;
         }
 
-        public AccelerateInterpolator(Context context, AttributeSet attrs) {
-            TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.EmojileRainViewer);
+        public DecelerateInterpolator(Context context, AttributeSet attrs) {
+            TypedArray a =
+                    context.obtainStyledAttributes(attrs, R.styleable.EmojileRainViewer);
+
             mFactor = a.getFloat(R.styleable.EmojileRainViewer_accelerateInterpolator, 1.0f);
-            mDoubleFactor = 2 * mFactor;
 
             a.recycle();
         }
 
         @Override
         public float getInterpolation(float input) {
+            float result;
             if (mFactor == 1.0f) {
-                return input * input;
+                result = (1.0f - ((1.0f - input) * (1.0f - input)));
             } else {
-                return (float) Math.pow(input, mDoubleFactor);
+                result = (float) (1.0f - Math.pow((1.0f - input), 2 * mFactor));
             }
+            return result;
         }
+
+        private float mFactor = 1.0f;
     }
 }
